@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pritam Chaudhary | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -70,11 +70,14 @@
                 <a href="https://linkedin.com" target="_blank">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
+                <a href="https://github.com/pritam26528-code" target="_blank">
+                    <i class="fab fa-github"></i>
+                    </a>
             </div>
 
             <!-- Buttons -->
             <div class="btn-group">
-                <a href="Pritam_CV.pdf" class="btn" download>
+                <a href="Pritam_Chaudhary_CV.pdf" class="btn" download>
                     Download CV
                 </a>
 
@@ -83,7 +86,6 @@
                 </a>
             </div>
         </div>
-
         <!-- Profile Image -->
         <div class="home-img">
             <div class="img-box">
@@ -98,79 +100,90 @@
         <h2>About Me</h2>
 
         <p>
-            I am a Computer Science student passionate about web development,
-            software engineering, and problem solving.
-
-            I am currently learning Frontend Development, C++, .NET,
-            and Database Management Systems.
+            I am a B.TechEdIT student learning Frontend Development, C++, .NET, and Database Management Systems.
+        My goal is to become a Full Stack Developer.
         </p>
     </section>
 
     <!-- Services Section -->
     <section id="services">
         <h2>Services</h2>
+    <div class="grid">
+        <div class="card">Website Design</div>
+        <div class="card">Frontend Development</div>
+        <div class="card">Basic Web Apps</div>
+        <div class="card">C++ Projects</div>
+    </div>
 
-        <ul>
-            <li>Website Design</li>
-            <li>Frontend Development</li>
-            <li>Basic Web Applications</li>
-            <li>C++ Programming Projects</li>
-        </ul>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
+    <h2>My Projects</h2>
 
-        <div class="project">
-            <h3>Personal Portfolio Website</h3>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
             <p>
-                A responsive portfolio website built using HTML and CSS.
+                A responsive personal portfolio website built using HTML and CSS.
+                It showcases my skills, learning journey, and projects.
             </p>
+            <a href="#" target="_blank">View Project</a>
         </div>
 
-        <div class="project">
-            <h3>Calculator Application</h3>
+        <div class="card">
+            <h3>Calculator App</h3>
             <p>
-                A calculator built using HTML, CSS, and JavaScript.
+                A simple calculator built using HTML, CSS, and JavaScript that
+                performs basic arithmetic operations.
             </p>
+            <a href="#" target="_blank">View Project</a>
         </div>
 
-        <div class="project">
+        <div class="card">
             <h3>Student Management System</h3>
             <p>
-                A console-based C++ application for managing student records.
+                A C++ console-based application for managing student records
+                with basic add, delete, and view features.
             </p>
+            <a href="#" target="_blank">View Code</a>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact Me</h2>
 
-        <p>Email: pritam@example.com</p>
-        <p>Phone: +977-XXXXXXXXXX</p>
-        <p>GitHub: github.com/yourusername</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    </section>
+    <form>
+        <input type="text" placeholder="Your Name" required>
 
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+    </form>
+</section>
+    
     <!-- Typed JS -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script>
-        var typed = new Typed(".text-animate", {
-            strings: [
-                "Computer Science Student",
-                "Frontend Developer",
-                "C++ Programmer",
-                ".NET Learner",
-                "Aspiring Full Stack Developer"
-            ],
-            typeSpeed: 100,
-            backSpeed: 60,
-            backDelay: 1000,
-            loop: true
-        });
+    var typed = new Typed(".text-animate", {
+    strings: [
+        "B.TechEdIT Student",
+        "Frontend Developer",
+        "C++ Programmer",
+        "Aspiring Full Stack Developer"
+    ],
+    typeSpeed: 100,
+    backSpeed: 60,
+    backDelay: 1000,
+    loop: true
+});
     </script>
 
 </body>
