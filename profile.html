@@ -4,54 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pritam Chaudhary | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
+    <!-- Header -->
     <header class="header">
         <a href="#" class="logo">Port<span>folio</span></a>
+
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>    
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section class="home">
+    <!-- Home Section -->
+    <section class="home" id="home">
+
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Pritam Chaudhary</h1>
-            <h3>And I'm learning <span class="text-animate"></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio optio corrupti excepturi, temporibus necessitatibus iusto consectetur, inventore architecto provident, est quas assumenda.</p>
-            
+
+            <h3>
+                And I'm a
+                <span class="text-animate"></span>
+            </h3>
+
+            <p>
+                Welcome to my portfolio! I am a passionate Computer Science
+                student with a strong interest in software development and
+                web technologies.
+
+                I enjoy learning new skills, solving problems, and building
+                projects that strengthen my technical knowledge.
+
+                Currently, I am learning HTML, CSS, JavaScript, C++, .NET,
+                and Database Management Systems while working on personal
+                projects to gain practical experience.
+
+                My goal is to become a skilled Full Stack Developer and
+                contribute to innovative technology solutions.
+            </p>
+
+            <!-- Social Links -->
             <div class="social-media">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
             </div>
 
+            <!-- Buttons -->
             <div class="btn-group">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn view-work">Experience</a>
+                <a href="Pritam_CV.pdf" class="btn" download>
+                    Download CV
+                </a>
+
+                <a href="#projects" class="btn">
+                    View Projects
+                </a>
             </div>
         </div>
 
+        <!-- Profile Image -->
         <div class="home-img">
             <div class="img-box">
-                <img src="profile.jpg" alt="Profile Image">
+                <img src="profile.jpg" alt="Pritam Chaudhary">
             </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am a Computer Science student passionate about web development,
+            software engineering, and problem solving.
+
+            I am currently learning Frontend Development, C++, .NET,
+            and Database Management Systems.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+
+        <ul>
+            <li>Website Design</li>
+            <li>Frontend Development</li>
+            <li>Basic Web Applications</li>
+            <li>C++ Programming Projects</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                A responsive portfolio website built using HTML and CSS.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Calculator Application</h3>
+            <p>
+                A calculator built using HTML, CSS, and JavaScript.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Student Management System</h3>
+            <p>
+                A console-based C++ application for managing student records.
+            </p>
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email: pritam@example.com</p>
+        <p>Phone: +977-XXXXXXXXXX</p>
+        <p>GitHub: github.com/yourusername</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </section>
+
+    <!-- Typed JS -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    
+
     <script>
         var typed = new Typed(".text-animate", {
-            strings: ["HTML", "CSS", "JavaScript", "C++", ".NET" ],
+            strings: [
+                "Computer Science Student",
+                "Frontend Developer",
+                "C++ Programmer",
+                ".NET Learner",
+                "Aspiring Full Stack Developer"
+            ],
             typeSpeed: 100,
             backSpeed: 60,
             backDelay: 1000,
